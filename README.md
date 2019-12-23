@@ -40,7 +40,7 @@ in this example we are using a specific service account (which must have cluster
 
 ## Proxy Support
 
-The MustGather operator supports using a proxy. The proxy setting can be specified in the MustGather object. If not specified, the cluster defaul proxy setting will be used. Here is an example:
+The MustGather operator supports using a proxy. The proxy setting can be specified in the MustGather object. If not specified, the cluster default proxy setting will be used. Here is an example:
 
 ```yaml
 apiVersion: redhatcop.redhat.io/v1alpha1
@@ -98,7 +98,7 @@ oc -n must-gather-operator apply -f deploy
 
 ### Meeting the operator requirements
 
-In order to run the operator needs a secret and a service accout to be created by the admin as follows (this assume the operato is running in the `must-gather-operator` namespace)
+In order to run the operator needs a secret and a service account to be created by the admin as follows (this assume the operator is running in the `must-gather-operator` namespace)
 
 ```shell
 oc create sa must-gather-admin -n must-gather-operator
